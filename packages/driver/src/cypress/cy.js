@@ -1090,6 +1090,8 @@ const create = function (specWindow, Cypress, Cookies, state, config, log) {
       timers.reset()
       testConfigOverrides.restoreAndSetTestConfigOverrides(test, Cypress.config, Cypress.env)
 
+      $Listeners.removeAllListeners()
+
       return cy.removeAllListeners()
     },
 

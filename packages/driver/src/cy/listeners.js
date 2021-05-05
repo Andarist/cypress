@@ -40,6 +40,7 @@ const eventHasReturnValue = (e) => {
 }
 
 module.exports = {
+  removeAllListeners,
   bindTo (contentWindow, callbacks = {}) {
     if (listenersAdded) {
       return
